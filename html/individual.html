@@ -7,52 +7,104 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /-->
+
 
     <title>Home</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top mb-5">
-        <a class="navbar-brand" href="home.html">Mental Health Tracker</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About.html">Meet the counselors</a>
+  <body style="background-color: #E7E0C9;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #11324D">
+      <a class="navbar-brand" style="color: #F0EBCC;" href="/html/home2.html">Mental Health Tracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item active">
+            <a class="nav-link" href="/html/home2.html" style="color: #F0EBCC; ">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/counselors.html" style="color: #F0EBCC; ">Meet the counselors</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #F0EBCC; ">Chatbot</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Chatbot</a>
-              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #F0EBCC; " href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Counselling
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color: #C1CFC0; ">
+                <li><a class="dropdown-item" href="/html/individual.html">Individual Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/couples.html">Couples Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/child.html">Child Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/group.html">Group Therapy</a></li>
+              </ul>
+            </li>
+        </ul>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Counselling
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Individual Therapy</a></li>
-                  <li><a class="dropdown-item" href="#">Couples Therapy</a></li>
-                  <li><a class="dropdown-item" href="#">Child Therapy</a></li>
-                  <li><a class="dropdown-item" href="#">Group Therapy</a></li>
+        
+        
+        <div class="mx-2" >
+          
+          <a class="btn  m-2" style="background-color: #F0EBCC; " href="/html/home.html">Logout</a>
+        </div>
+      </div>  
+  </nav>
+     
+    <div class="container p-3" style="background-color: #E7E0C9;">
+        <h1 class="display-4 text-center">Individual Therapy</h1>
+        <hr class="my-4">
+        <h3>Life is too important to suffer needlessly</h3>
+        <p class="lead mx-auto">
+            With the stress of everyday living, knowing how to cope can be the difference between unneeded anguish or days filled with tranquility and fulfillment. Sometimes you need someone to talk with, a trusted professional who can help you put things into the proper perspective and help manage the challenges of daily life:</p>
+            <ul class="elementor-icon-list-items">
+                <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                <i aria-hidden="true" class="fad fa-check"></i>						</span>
+                <span class="elementor-icon-list-text">Grieving over the loss of a loved one</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                <i aria-hidden="true" class="fad fa-check"></i>						</span>
+                <span class="elementor-icon-list-text">Work-related stress</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                <i aria-hidden="true" class="fad fa-check"></i>						</span>
+                <span class="elementor-icon-list-text">Break up of a relationship</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                <i aria-hidden="true" class="fad fa-check"></i>						</span>
+                <span class="elementor-icon-list-text">Parenting stress</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                <i aria-hidden="true" class="fad fa-check"></i>						</span>
+                <span class="elementor-icon-list-text">Addiction</span>
+                </li>
                 </ul>
-              </li>
-          </ul>
 
-          
-          
-          <div class="mx-2">
-            <button class="btn btn-success m-2" data-toggle="modal" data-target="#LoginModal">Login In</button>
-            <button class="btn btn-success m-2" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
-          </div>
-        </div>  
-      </nav>
-      
-      
+
+                <p class="lead mx-auto">It is important to see a professional who recognizes if you are suffering needlessly from normal feelings of sadness, anxiety, insomnia,  or occasional anger related to a daily life challenge, or if you are having issues that interfere with your contentment, such as clinical depression, a bipolar disorder, obsessive-compulsive disorder or other treatable conditions. </p>       
+                <h3>We Can Help You Develop New Skills to Navigate the Complexities of Life</h3>
+        <p class="lead mx-auto">e are well-known for placing clients with a suitable professional to meet their individual needs. From general counseling to specialized therapy, our staff can help you develop new skills and attitudes that will open new opportunities in your life and help you experience a renewed sense of enjoyment for people and everyday activities.</p>
+    </div>
+    
+    
+    <div class="jumbotron" style="background-color: #B5EAEA;margin: 0;">
+        
+
+        <div class="text-center"><h1 class="display-4">Have a question? Don't be afraid to ask.</h1>
+            <hr class="my-4">
+            <p class="lead mx-auto">Our mission is to be involved with sympathetic objectivity in aiding our clients to gain a deeper understanding of themselves and their circumstances for the purpose of leading a fuller, richer and more meaningful life.</p>
+            
+            
+            <a class="btn col-md-3 " href="/html/contact.html" role="button" style="background-color: #11324D;color: #F0EBCC;">Contact Us</a></div>
+      </div> 
      
       
 
@@ -155,8 +207,11 @@
       </div>
     </div>
   </div> 
-  <footer class="container-fluid bg-dark fixed-bottom">
-    <p class="float-right p-3"><a href="home.html">Back to top</a></p>
+
+
+  <footer class="container-fluid " style="background-color: #11324D;">
+    
+    <p class="float-right p-3"><a href="/html/individual.html">Back to top</a></p>
     <p class="text-white p-3">&copy; 2017-2021 Mental Health Tracker, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -173,5 +228,8 @@
     -->
   </body>
 </html>
+
+
+
 
 

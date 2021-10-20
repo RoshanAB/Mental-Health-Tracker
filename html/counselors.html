@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+  <body style="background-color: #E7E0C9;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #11324D">
+      <a class="navbar-brand" style="color: #F0EBCC;" href="/html/home2.html">Mental Health Tracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item active">
+            <a class="nav-link" href="/html/home2.html" style="color: #F0EBCC; ">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/counselors.html" style="color: #F0EBCC; ">Meet the counselors</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #F0EBCC; ">Chatbot</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #F0EBCC; " href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Counselling
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color: #C1CFC0; ">
+                <li><a class="dropdown-item" href="/html/individual.html">Individual Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/couples.html">Couples Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/child.html">Child Therapy</a></li>
+                <li><a class="dropdown-item" href="/html/group.html">Group Therapy</a></li>
+              </ul>
+            </li>
+        </ul>
+
+        
+        
+        <div class="mx-2" >
+          
+          <a class="btn  m-2" style="background-color: #F0EBCC; " href="/html/home.html">Logout</a>
+        </div>
+      </div>  
+  </nav>
+    
+    
+    
+    
+     
+      
+
+    
+
+    <!-- LoginModal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check col-md-12 mx-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <a role="button" href="Second_page.html" type="submit" class="btn btn-primary col-md-3 mx-auto my-auto">Log in</a>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+    <!-- SignUpModal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              <div class="form-group col-md-6 mb-3">
+                <label for="phone_no">Phone Number</label>
+                <input type="tel" name="num" input name="color"  required="required" class="form-control" id="phone_no" placeholder="Phone Number">
+              </div>
+              <div class="form-group col-md-6 mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group col-md-6 mb-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group col-md-6 mb-3">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check col-md-12 mx-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary col-md-3 mx-auto my-auto">Sign up</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <h1 class="text-center mt-4">Meet our counselors</h1>
+  <div class="row row-cols-1 row-cols-md-3 m-5 px-5 ">
+    <div class="col mb-4" >
+      <div class="card h-100" style="background-color: #B5EAEA">
+        <div class="container p-5 text-center">
+            <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2080582.jpg" class="card-img-top w-75 rounded-circle " alt="...">
+        </div>  
+        
+        <div class="card-body text-center">
+          <h5 class="card-title">Michael D Banov, MD</h5>
+          <p class="card-text ">Psychiatrist</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col mb-4">
+        <div class="card h-100" style="background-color: #B5EAEA">
+          <div class="container p-5 text-center">
+              <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2080598.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+          </div>  
+          
+          <div class="card-body text-center">
+            <h5 class="card-title">Daniel Jay ,MD</h5>
+            <p class="card-text ">Psychiatrist</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-4">
+        <div class="card h-100" style="background-color: #B5EAEA">
+          <div class="container p-5 text-center">
+              <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2240869.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+          </div>  
+          
+          <div class="card-body text-center">
+            <h5 class="card-title">Rebecca J. White, RN, BSN, PMHNP-BC</h5>
+            <p class="card-text ">Advanced Practice Registered Nurse</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col mb-4">
+          <div class="card h-100" style="background-color: #B5EAEA">
+            <div class="container p-5 text-center">
+                <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2080592.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+            </div>  
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">Marla Fleming,APRN</h5>
+              <p class="card-text ">Advanced Practice Nurse</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col mb-4">
+            <div class="card h-100" style="background-color: #B5EAEA">
+              <div class="container p-5 text-center">
+                  <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2118368.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+              </div>  
+              
+              <div class="card-body text-center">
+                <h5 class="card-title">Namita Patel,APRN</h5>
+                <p class="card-text ">Advanced Practice Registered Nurse</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col mb-4">
+              <div class="card h-100" style="background-color: #B5EAEA">
+                <div class="container p-5 text-center">
+                    <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2080596.png" class="card-img-top w-75 rounded-circle" alt="...">
+                </div>  
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Karen Greenhood,APRN</h5>
+                  <p class="card-text ">Advanced Practice Registered Nurse</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col mb-4">
+                <div class="card h-100" style="background-color: #B5EAEA">
+                  <div class="container p-5 text-center">
+                      <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2118135.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+                  </div>  
+                  
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Margaret Margeley,LPC</h5>
+                    <p class="card-text ">Licensed Professional Counselor</p>
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="col mb-4">
+                  <div class="card h-100" style="background-color: #B5EAEA">
+                    <div class="container p-5 text-center">
+                        <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2115104.png" class="card-img-top w-75 rounded-circle" alt="...">
+                    </div>  
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Fred Fraser,PhD</h5>
+                      <p class="card-text ">Psychologist</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col mb-4">
+                    <div class="card h-100" style="background-color: #B5EAEA">
+                      <div class="container p-5 text-center">
+                          <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2115115.jpg" class="card-img-top w-75 rounded-circle" alt="...">
+                      </div>  
+                      
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Robert Poynter,MS</h5>
+                        <p class="card-text ">Licensed Professional Counselor</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+    
+
+    
+    
+  </div>
+  <footer class="container-fluid " style="background-color: #11324D;">
+    
+        
+    <div class="container-fluid  py-5 mx-auto">
+        <h2 style="color: #F0EBCC;">Contact Us</h2>
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1" style="color: #F0EBCC;">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1" style="color: #F0EBCC;">Select your Query</label>
+              <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="How can we help you ?">
+                <option selected disabled>-- How can we help you ? --</option>
+                <option>I need to change the appointment date.</option>
+                <option>I have a Query</option>
+                <option>I would like to give feedback/suggestions</option>
+                <option>Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1" style="color: #F0EBCC;">Elaborate your concern</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+    </div>
+
+   
+<p class="float-right p-3"><a href="/html/counselors.html">Back to top</a></p>
+<p class="text-white p-3">&copy; 2017-2021 Mental Health Tracker, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
